@@ -17,25 +17,26 @@
       background-color: #19a1ad;
       height: 100vh;
     }
-    
 
-    #con{
+    #con {
       position: relative;
       display: grid;
-      grid-template-columns: auto auto auto; 
+      grid-template-columns: auto auto auto;
       justify-content: center;
     }
+
     #card-top {
       position: relative;
       top: -500px;
       left: 150px;
     }
+
     #card-bottom {
       position: relative;
       top: 300px;
       right: 150px;
-
     }
+
     .container {
       z-index: 1;
       background-color: white;
@@ -45,10 +46,12 @@
       height: 350px;
       box-shadow: 0px 0px 30px hsla(227, 10%, 46%, 0.806);
     }
+
     #card-bg {
       border-top-left-radius: 25px;
       border-top-right-radius: 25px;
     }
+
     #pic {
       border: 5px solid white;
       border-radius: 50%;
@@ -56,6 +59,7 @@
       top: -60px;
       left: 120px;
     }
+
     #con-1 {
       display: grid;
       grid-template-rows: 1fr 1fr;
@@ -63,6 +67,7 @@
       padding-top: 60px;
       margin-bottom: 10px;
     }
+
     #con-2 {
       display: grid;
       padding-top: 20px;
@@ -70,24 +75,29 @@
       border-top: 1px solid hsla(0, 0%, 59%, 0.238);
       width: 350px;
     }
+
     .text-1 {
       font-size: 18px;
       font-weight: 700;
     }
+
     #age {
       font-size: 18px;
     }
+
     .text-2 {
       color: hsl(0, 0%, 59%);
       font-size: 11px;
       font-weight: 300;
     }
+
     .attribution {
       position: relative;
       top: -250px;
       font-size: 11px;
       text-align: center;
     }
+
     .attribution a {
       color: hsl(228, 45%, 44%);
     }
@@ -95,40 +105,38 @@
 </head>
 
 <body>
-  
-<div id="con">
-  <img src="./images/bg-pattern-top.svg" alt="top-img" id="card-top">
-  
-  <div class="container">
-    <img src="./images/bg-pattern-card.svg" alt="cardbg" id="card-bg">
 
-    <div id="con">
-      <img src="./images/image-victor.jpg" alt="pic" id="pic">
-      <div id="con-1">
-        <div class="text-1">Victor Crest <span class="text-2" id="age"> 26</span></div>
-        <div class="text-2">London</div>
+  <div id="con">
+    <img src="./images/bg-pattern-top.svg" alt="top-img" id="card-top">
+
+    <div class="container">
+      <img src="./images/bg-pattern-card.svg" alt="cardbg" id="card-bg">
+
+      <div id="con">
+        <img src="./images/image-victor.jpg" alt="pic" id="pic">
+        <div id="con-1">
+          <div class="text-1">Victor Crest <span class="text-2" id="age"> 26</span></div>
+          <div class="text-2">London</div>
+        </div>
+      </div>
+
+      <div id="con-2">
+        <div class="text-1">80K</div>
+        <div class="text-1">803K</div>
+        <div class="text-1">1.4K</div>
+        <div class="text-2">Followers</div>
+        <div class="text-2">Likes</div>
+        <div class="text-2">Photos</div>
       </div>
     </div>
 
-    <div id="con-2">
-      <div class="text-1">80K</div>
-      <div class="text-1">803K</div>
-      <div class="text-1">1.4K</div>
-      <div class="text-2">Followers</div>
-      <div class="text-2">Likes</div>
-      <div class="text-2">Photos</div>
-    </div>
+    <img src="./images/bg-pattern-bottom.svg" alt="bottom-img" id="card-bottom">
   </div>
-
-  <img src="./images/bg-pattern-bottom.svg" alt="bottom-img" id="card-bottom">
-</div>
-<div class="attribution">
-  Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
-  Coded by <a href="#">Jaya Vignesh</a>
-</div>
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="#">Jaya Vignesh</a>
+  </div>
   
-
-
 </body>
 
 </html>
