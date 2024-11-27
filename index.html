@@ -4,9 +4,6 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- displays site properly based on user's device -->
-  <!-- <link href="https://fonts.googleapis.com/css?family=Kumbh+Sans:100,200,300,regular,500,600,700,800,900" rel="stylesheet" /> -->
-
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <title>Frontend Mentor | Profile card component</title>
 
@@ -20,27 +17,30 @@
       background-color: #19a1ad;
       height: 100vh;
     }
+    
+
     #con{
       position: relative;
       display: grid;
-      grid-template-rows: auto auto;
+      grid-template-columns: auto auto auto; 
       justify-content: center;
     }
     #card-top {
-      position: absolute;
+      position: relative;
       top: -500px;
-      left: -30px;
+      left: 150px;
     }
     #card-bottom {
-      position: absolute;
-      bottom: -400px;
-      right: 0px;
+      position: relative;
+      top: 300px;
+      right: 150px;
+
     }
     .container {
+      z-index: 1;
       background-color: white;
       border-radius: 25px;
       margin-top: 200px;
-      margin-bottom: 200px;
       width: 350px;
       height: 350px;
       box-shadow: 0px 0px 30px hsla(227, 10%, 46%, 0.806);
@@ -83,6 +83,8 @@
       font-weight: 300;
     }
     .attribution {
+      position: relative;
+      top: -250px;
       font-size: 11px;
       text-align: center;
     }
@@ -93,9 +95,10 @@
 </head>
 
 <body>
+  
 <div id="con">
   <img src="./images/bg-pattern-top.svg" alt="top-img" id="card-top">
-  <img src="./images/bg-pattern-bottom.svg" alt="bottom-img" id="card-bottom">
+  
   <div class="container">
     <img src="./images/bg-pattern-card.svg" alt="cardbg" id="card-bg">
 
@@ -116,11 +119,12 @@
       <div class="text-2">Photos</div>
     </div>
   </div>
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
-    Coded by <a href="#">Jaya Vignesh</a>
-  </div>
 
+  <img src="./images/bg-pattern-bottom.svg" alt="bottom-img" id="card-bottom">
+</div>
+<div class="attribution">
+  Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+  Coded by <a href="#">Jaya Vignesh</a>
 </div>
   
 
