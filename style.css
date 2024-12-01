@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100..900&display=swap');
+
+    * {
+      margin: 0;
+      padding: 0;
+      
+    }
+
+    body {
+      text-align: center;
+      font-family: "Kumbh Sans", serif;
+      background-color: #19a1ad;
+      background-image: url("./images/bg-pattern-top.svg"), url("./images/bg-pattern-bottom.svg");
+    background-position: left -800px bottom 50px, right -600px top 350px;
+    background-repeat: no-repeat, no-repeat;
+    background-size: cover, cover; 
+    background-attachment: fixed;
+
+    }
+
+    #cont {
+      position: relative;
+      display: grid;
+      grid-template-columns: auto auto aut   o;
+      justify-content: center;
+    }
+
+    #con {
+      position: relative;
+    }
+
+    #bg-top {
+      position: relative;
+      top: -500px;
+      left: 150px;
+    }
+
+    #bg-bottom {
+      position: relative;
+      top: 300px;
+      right: 150px;
+    }
+
+    .container {
+      z-index: 1;
+      background-color: white;
+      border-radius: 25px;
+      margin-top: 200px;
+      width: 350px;
+      height: 350px;
+      box-shadow: 0px 0px 30px hsla(227, 10%, 46%, 0.806);
+    }
+
+    #bg-card {
+      border-top-left-radius: 25px;
+      border-top-right-radius: 25px;
+    }
+
+    #pic {
+      border: 5px solid white;
+      border-radius: 50%;
+      position: absolute;
+      top: -60px;
+      left: 120px;
+    }
+
+    #cont-1 {
+      display: grid;
+      grid-template-rows: 1fr 1fr;
+      grid-row-gap: 10px;
+      padding-top: 60px;
+      margin-bottom: 10px;
+    }
+
+    #cont-2 {
+      display: grid;
+      padding-top: 20px;
+      grid-template-columns: 1fr 1fr 1fr;
+      border-top: 1px solid hsla(0, 0%, 59%, 0.238);
+      width: 350px;
+    }
+
+    .text-1 {
+      font-size: 18px;
+      font-weight: 700;
+    }
+
+    #age {
+      font-size: 18px;
+    }
+
+    .text-2 {
+      color: hsl(0, 0%, 59%);
+      font-size: 11px;
+      font-weight: 300;
+    }
+
+    .attribution {
+      position: relative;
+      top: 250px;
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }

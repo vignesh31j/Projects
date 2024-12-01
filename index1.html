@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- displays site properly based on user's device -->
+
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+    <title>Frontend Mentor | Profile card component</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100..900&display=swap');
+
+        body {
+            background-color: #19a1ad;
+            font-size: 18px;
+            overflow: hidden;
+            font-family: "Kumbh Sans", serif;
+        }
+
+        #bgt {
+            position: relative;
+            top: -500px;
+            left: 150px;
+        }
+
+        #bgb {
+            position: relative;
+
+            right: 150px;
+            top: 300px;
+        }
+
+        .container {
+            margin-left: 600px;
+            margin-top: 150px;
+            border-radius: 25px;
+            text-align: center;
+            background-color: aliceblue;
+            width: 350px;
+            height: 350px;
+        }
+
+        #pic {
+            position: absolute;
+            border-radius: 50%;
+            border: 5px solid white;
+            left: 120px;
+            top: 80px;
+        }
+
+        #card {
+            border-top-left-radius: 25px;
+            border-top-right-radius: 25px;
+        }
+
+
+
+        #text {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            border-top: 1px solid hsl(0, 4%, 80%);
+            width: 350px;
+            margin-top: 60px;
+            padding-top: 20px;
+        }
+
+        .text1 {
+            font-weight: 700;
+            font-size: 18px;
+
+
+        }
+
+        .text2 {
+            font-weight: 300;
+            font-size: 11px;
+            color: hsl(0, 0%, 59%);
+
+        }
+
+        .text3 {
+            display: grid;
+            grid-template-rows: 1fr;
+
+
+            margin-top: 50px;
+        }
+
+        .con {
+            position: relative;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            justify-content: center;
+
+        }
+
+        #age {
+            font-size: 18px;
+            text-indent: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="con">
+        <img src="./images/bg-pattern-top.svg" alt="top" id="bgt">
+
+        <div class="container">
+            <img src="./images/bg-pattern-card.svg" alt="card" id="card">
+
+            <div class="text3">
+                <img src="../images/image-victor.jpg" alt="pic" id="pic">
+                <div>
+                    <div class="text1">
+                        Victor Crest <span class="text2" id="age"> 26 </span>
+                    </div>
+                    <div class="text2">London</div>
+                </div>
+
+                <div id="text">
+                    <div class="text1">80K</div>
+                    <div class="text1">803K</div>
+                    <div class="text1">1.4K</div>
+                    <div class="text2"> Followers</div>
+                    <div class="text2">Likes</div>
+                    <div class="text2">Photos</div>
+                </div>
+                
+            </div>
+            <img src="./images/bg-pattern-bottom.svg" alt="btm" id="bgb">
+        </div>
+    </div>
+    <footer>
+        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+        Coded by <a href="#"> M Vignesh UI/UX Designer</a>.
+    </footer>
+</body>
+
+</html>
